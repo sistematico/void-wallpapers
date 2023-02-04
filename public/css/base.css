@@ -1,0 +1,15 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main > .container {
+  padding: 60px 15px 0;
+}
