@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "github": "NODE_ENV=github vite build",
+    "github": "vite build --base=/void-wallpapers/",
     "preview": "vite preview"
   },
   "dependencies": {
