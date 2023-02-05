@@ -3,7 +3,7 @@
         <div class="row py-lg-5">
             <div class="col-md-3 d-flex justify-content-center">
                 <div class="void-logo">
-                    <img class="bg img-fluid" alt="Void Linux" src="img/void_bg.png" />
+                    <img class="bg img-fluid" alt="Void Linux" src="/img/void_bg.png" />
                     <img class="fg img-fluid" alt="Void Linux" />
                 </div>
             </div>
