@@ -1,4 +1,4 @@
-name: Github Pages
+name: Vite Github Pages
 
 on:
   push:
@@ -38,11 +38,11 @@ jobs:
         with:
           version: 7
 
-      - name: Install deps
+      - name: pnpm install deps
         run: pnpm install
 
-      - name: Run build
-        run: pnpm run github
+      - name: pnpm run build
+        run: pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
