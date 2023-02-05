@@ -10,7 +10,6 @@ import images from '../json/data.json'
 const modalImage = ref('')
 
 function handleClickApp(n) {
-    //console.log(n)
     modalImage.value = n  
 }
 </script>
