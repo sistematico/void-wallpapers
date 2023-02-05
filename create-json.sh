@@ -7,18 +7,19 @@ cd public
 
 ARGS=($(\ls -d walls/*))
 
-i=0
-json=''
-for item in "${ARGS[@]}"
-do
-    ((i+1)) 
-    # json="$(jq --arg val "$i" '.input.names += [$val]' <<< "$json")"
+# i=0
+# json=''
+# for item in "${ARGS[@]}"
+# do
+#     ((i+1)) 
+#     # json="$(jq --arg val "$i" '.input.names += [$val]' <<< "$json")"
+#     # jq -sR --arg val "$i" '.input.names += [$val]'
+#     # echo $(jq --arg file "$item" '. += $file')
+#     json+=$(printf '%s\n' "${item}" | jq -sR 'split("\n")[:-1] | to_entries | map({ name: ("/" + .value), index: .key }) | .')
 
-    # jq -sR --arg val "$i" '.input.names += [$val]'
+# done
 
-    echo $(jq --arg file "$item" '. += $file')
-
-done
+# echo $json
 
 # printf '%s\n' "${ARGS[@]}" |\
 #         jq --slurp -R \
@@ -26,5 +27,7 @@ done
 #         to_entries |
 #         map({ name: ("/" + .value), index: .key }) |
 #         .' > ../json/data.json
+
+for r in "${ARGS[@]}" ; do printf "%s" "$r" ; done | jq -s .
 
 cd "$OLDPWD"
