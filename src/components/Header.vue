@@ -3,20 +3,41 @@ import Icon from './Icon.vue'
 </script>
 <template>
     <header>
-        <nav class="navbar navbar-expand-md fixed-top text-light" style="background-color: #295340;">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center fs-5 fw-bold text-light py-0" href="/">
-                    <img src="/img/favicon.svg" alt="Void Wallpapers" width="26" height="26" class="me-2"/> Void Wallpapers
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="d-md-flex justify-content-center justify-content-md-end collapse navbar-collapse" id="navbarCollapse">
-                    <div>
-                        <a href="https://github.com/sistematico/void-wallpapers" class="btn btn-light"><Icon name="github" /> Github</a>
+        <nav class="navbar navbar-expand-md fixed-top p-0" style="background-color: #295340">
+            <div class="container g-0">
+                <div class="d-md-flex justify-content-md-between w-100">
+                    <div class="gx-2 ms-2 ms-md-0">
+                        <a class="navbar-brand d-flex align-items-center fs-5 fw-bold text-light" href="/"> <img src="/img/void_bg.svg" alt="Void Wallpapers" width="26" height="26" class="rotate" />&nbsp;&nbsp;Void Wallpapers </a>
+                    </div>
+
+                    <div class="ms-md-auto navbar-nav">
+                        <a class="nav-link px-2" href="https://github.com/sistematico/void-wallpapers" target="_blank">Github</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 </template>
+<style scoped>
+.nav-link:hover {
+    color: #ffffff;
+    background-color: #222222;
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+.rotate:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+</style>

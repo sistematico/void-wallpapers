@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito');
 
 $body-bg: #222222;
-$body-color: #CCCCCC;
+$body-color: #cccccc;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-body { font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-a { color: #62b086; }
+body {
+    font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    color: #62b086;
+}
 
-.navbar-brand, 
-.nav-link, 
-.nav-link.active, 
-a:hover { 
-    color: #FFFFFF;
+.navbar-brand,
+.nav-link,
+.nav-link.active,
+a:hover {
+    color: #ffffff;
 }
 
 .bi {
     display: inline-block;
-    vertical-align: -.125em;
+    vertical-align: -0.125em;
     fill: currentcolor;
 }
-

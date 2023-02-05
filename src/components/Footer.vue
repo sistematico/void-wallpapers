@@ -1,11 +1,14 @@
+<script setup>
+import Icon from '@/components/Icon.vue'
+</script>
 <template>
-    <footer class="footer mt-auto py-5 text-muted" style="background-color: #295340;">
+    <footer class="footer mt-auto py-4" style="background-color: #295340;">
         <div class="container">
-            <p class="float-end mb-1">
-                <a href="#" class="text-decoration-none">Topo</a>
+            <p class="float-end">
+                <a href="#" class="text-decoration-none"><Icon name="arrow-up-fill" /> Go to Top</a>
             </p>
-            <p class="mb-1">&copy; 2023 Lucas Saliés Brum</p>
-            <!-- <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.3/getting-started/introduction/">getting started guide</a>.</p> -->
+            <p class="mb-1 text-muted fst-italic">Created by Lucas Saliés Brum in 2023</p>
+            <p class="mb-0 text-muted fst-italic">Made with <a href="https://voidlinux.org" target="_blank">Void Linux</a> & <a href="https://www.vim.org" target="_blank">vim</a>.</p>
         </div>
     </footer>
 </template>
