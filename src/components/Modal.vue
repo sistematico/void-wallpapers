@@ -9,8 +9,8 @@ defineProps(['image'])
                     <img :src="image" class="img-fluid" alt="Void Wallpaper" />
                 </div>
                 <div class="modal-footer border border-0">
-                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fechar</button>
-                    <a :href="image" type="button" class="btn btn-primary" download>Baixar</a>
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                    <a :href="image" type="button" class="btn btn-primary" download>Download</a>
                 </div>
             </div>
         </div>

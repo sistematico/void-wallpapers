@@ -1,6 +1,6 @@
 <template>
     <section class="container" style="margin-top: 60px">
-        <div class="row py-lg-5">
+        <div class="row py-md-3 gy-5 gy-md-0">
             <div class="col-md-3 d-flex justify-content-center">
                 <div class="void-logo">
                     <img class="bg img-fluid" alt="Void Linux" src="/img/void_bg.png" />
@@ -8,8 +8,8 @@
                 </div>
             </div>
             <div class="col-md-9 d-md-flex align-items-md-center">
-                <div>
-                    <h2 class="display-5">Void (Linux) Wallpapers</h2>
+                <div class="text-center text-md-start">
+                    <h2 class="">Void (Linux) Wallpapers</h2>
                     <p>Hand-picked wallpapers for <a href="https://voidlinux.org" title="Void Linux">Void Linux</a></p>
                 </div>
             </div>
